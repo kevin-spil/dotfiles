@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[user]
+	name = Kevin Bongers
+	email = kevin.bongers@spilgames.com
+[core]
+	editor = vim
+	autocrlf = input
+[alias]
+	s = status -sb
+	fa = fetch --all
+	po = pull origin
+	pom = pull origin master
