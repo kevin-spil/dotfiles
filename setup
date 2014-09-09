@@ -3,3 +3,5 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.sshrc ~/.ssh/rc
+ln -s ~/dotfiles/.emacs ~/.emacs
+ln -s ~/dotfiles/.emacs.d ~/.emacs.d
