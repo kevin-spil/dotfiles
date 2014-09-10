@@ -11,3 +11,4 @@
 	fa = fetch --all
 	po = pull origin
 	pom = pull origin master
+	plog=log --color --date=short --graph --pretty=format:\"%h %Cgreen%an%Creset %cd%Cblue%d %Cred%s\"
