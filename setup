@@ -1,7 +1,23 @@
+#!/bin/bash
+
+function link_files {
+	 local source="${1}"
+	 local target="${2}"
+	 if [ ! -f ${target} ]; then
+	     ln -s ${source} ${target}
+	 fi
+}
 ln -s ~/dotfiles/.oh-my-zsh ~/
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.sshrc ~/.ssh/rc
-ln -s ~/dotfiles/.emacs ~/.emacs
+link_files ~/dotfiles/.zshrc ~/.zshrc
+link_files ~/dotfiles/.tmux.conf ~/.tmux.conf
+link_files ~/dotfiles/.gitconfig ~/.gitconfig
+link_files ~/dotfiles/.sshrc ~/.ssh/rc
+link_files ~/dotfiles/.emacs ~/.emacs
 ln -s ~/dotfiles/.emacs.d ~/.emacs.d
+link_files ~/dotfiles/.vimrc ~/.vimrc
+
+if [ ! -d "~/.vim/plugins" ]; then
+   mkdir -p ~/.vim/plugins
+fi
+
+link_files ~/dotfiles/vimplugins/harlquin.vim ~/.vim/plugins/harlequin.vim
