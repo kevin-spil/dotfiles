@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	name = Kevin Bongers
-	email = kevin.bongers@spilgames.com
+	email = Kevin.Bongers@spilgames.com
 [core]
 	editor = vim
 	autocrlf = input
