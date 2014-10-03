@@ -27,6 +27,8 @@ set expandtab
 
 set nocompatible      " use vim-defaults instead of vi-defaults (easier, more user friendly)
 
+set t_Co=256
+color harlequin
 
 set background=dark     " enable for dark terminals
 set nowrap              " dont wrap lines

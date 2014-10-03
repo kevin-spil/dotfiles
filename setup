@@ -20,4 +20,7 @@ if [ ! -d "~/.vim/plugins" ]; then
    mkdir -p ~/.vim/plugins
 fi
 
-link_files ~/dotfiles/vimplugins/harlquin.vim ~/.vim/plugins/harlequin.vim
+if [ ! -d "~/.vim/colors" ]; then
+    mkdir -p ~/.vim/colors
+fi
+link_files ~/dotfiles/vimplugins/harlequin.vim ~/.vim/colors/harlequin.vim
