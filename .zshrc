@@ -84,4 +84,5 @@ export PATH="/home/ec2-user/.rvm/gems/ruby-2.1.0/bin:/home/ec2-user/.rvm/gems/ru
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias moshimoshi="mosh"
 alias tmux="tmux -2"
