@@ -86,3 +86,6 @@ export PATH="/home/ec2-user/.rvm/gems/ruby-2.1.0/bin:/home/ec2-user/.rvm/gems/ru
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias moshimoshi="mosh"
 alias tmux="tmux -2"
+if [ -f ~/.ssh/env ]; then
+    source ~/.ssh/env
+fi
