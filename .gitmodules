@@ -1,6 +1,0 @@
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
-[submodule ".emacs.d/scripts/syntaxerl"]
-	path = .emacs.d/scripts/syntaxerl
-	url = https://github.com/ten0s/syntaxerl.git

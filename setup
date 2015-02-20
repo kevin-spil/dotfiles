@@ -7,13 +7,8 @@ function link_files {
 	     ln -s ${source} ${target}
 	 fi
 }
-ln -s ~/dotfiles/.oh-my-zsh ~/
-link_files ~/dotfiles/.zshrc ~/.zshrc
 link_files ~/dotfiles/.tmux.conf ~/.tmux.conf
 link_files ~/dotfiles/.gitconfig ~/.gitconfig
-link_files ~/dotfiles/.sshrc ~/.ssh/rc
-link_files ~/dotfiles/.emacs ~/.emacs
-ln -s ~/dotfiles/.emacs.d ~/
 link_files ~/dotfiles/.vimrc ~/.vimrc
 
 if [ ! -d "~/.vim/plugins" ]; then
