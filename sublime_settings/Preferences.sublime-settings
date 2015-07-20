@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Zenburnesque (SL).tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_speed": 0,
+	"shift_tab_unindent": true,
+	"translate_tabs_to_spaces": true
+}
