@@ -2,7 +2,6 @@
 	ui = true
 [user]
 	name = Kevin Bongers
-	email = Kevin.Bongers@spilgames.com
 [core]
 	editor = vim
 	autocrlf = input
@@ -14,3 +13,5 @@
 	plog=log --color --date=short --graph --pretty=format:\"%h %Cgreen%an%Creset %cd%Cblue%d %Cred%s\"
 [gitreview]
 	username = Kevin
+[include]
+    path = ~/.gitconfig_local
