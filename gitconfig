@@ -5,6 +5,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+    eol = native
 [alias]
 	s = status -sb
 	fa = fetch --all
