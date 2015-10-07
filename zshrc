@@ -78,5 +78,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias yes='printf "![YES]($(curl -s http://yesno.wtf/api?force=yes | jq -c -M -r .image ))" | xclip -selection clipboard'
-alias no='printf "![NO]($(curl -s http://yesno.wtf/api?force=no | jq -c -M -r .image ))" | xclip -selection clipboard'
+alias yes='printf "![YES]($(curl -s http://yesno.wtf/api\?force\=yes | jq -c -M -r .image ))" | xclip -selection clipboard'
+alias no='printf "![NO]($(curl -s http://yesno.wtf/api\?force\=no | jq -c -M -r .image ))" | xclip -selection clipboard'
