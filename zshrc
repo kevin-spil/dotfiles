@@ -80,6 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias yesimg='printf "![YES]($(curl -s http://yesno.wtf/api\?force\=yes | jq -c -M -r .image ))" | xclip -selection clipboard'
 alias noimg='printf "![NO]($(curl -s http://yesno.wtf/api\?force\=no | jq -c -M -r .image ))" | xclip -selection clipboard'
-alias s='ssh'
+alias s='scsh'
 alias tmuxa='tmux new-session -t 0'
 alias tmuxrefresh='export SSH_AUTH_SOCK=$(tmux showenv | grep SSH_AUTH_SOCK | cut -d = -f 2)'
