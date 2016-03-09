@@ -53,3 +53,37 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch       " highlight search (very useful!)
   set incsearch      " search incremently (search while typing)
 endif
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rodjek/vim-puppet'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+let NERDTreeIgnore=['\.py[co]$', '\~$']
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <C-n> :NERDTreeToggle<CR>
+let g:ctrlp_use_caching = 0
+
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+  let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    \ }
+endif
