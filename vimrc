@@ -28,7 +28,6 @@ set expandtab
 set nocompatible      " use vim-defaults instead of vi-defaults (easier, more user friendly)
 
 set t_Co=256
-color harlequin
 
 set background=dark     " enable for dark terminals
 set nowrap              " dont wrap lines
@@ -69,9 +68,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rodjek/vim-puppet'
+Plugin 'nielsmadan/harlequin'
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+color harlequin
 
 let NERDTreeIgnore=['\.py[co]$', '\~$']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
