@@ -90,3 +90,6 @@ else
     \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
     \ }
 endif
+
+" Setup eyaml to be highlighted as yaml
+au BufNewFile,BufRead *.eyaml setlocal ft=yaml
