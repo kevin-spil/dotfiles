@@ -71,6 +71,10 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'nielsmadan/harlequin'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -93,3 +97,13 @@ endif
 
 " Setup eyaml to be highlighted as yaml
 au BufNewFile,BufRead *.eyaml setlocal ft=yaml
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
