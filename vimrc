@@ -70,6 +70,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'nielsmadan/harlequin'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'pearofducks/ansible-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
