@@ -78,7 +78,9 @@ Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-color harlequin
+
+" Try loading the color scheme
+silent! color harlequin
 
 let NERDTreeIgnore=['\.py[co]$', '\~$']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -98,10 +100,12 @@ endif
 " Setup eyaml to be highlighted as yaml
 au BufNewFile,BufRead *.eyaml setlocal ft=yaml
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+if isdirectory("~/.vim/bundle/syntastic")
+    " Syntastic
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+endif
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
