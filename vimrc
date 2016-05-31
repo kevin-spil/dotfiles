@@ -111,3 +111,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:syntastic_puppet_puppetlint_args = "--no-80chars-check --no-class_inherits_from_params-check --no-autoloader_layout-check --no-documentation-check --no-quoted_booleans-check"
