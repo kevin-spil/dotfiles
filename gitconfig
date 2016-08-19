@@ -1,18 +1,19 @@
 [color]
-	ui = true
+    ui = true
 [user]
-	name = Kevin Bongers
+    name = Kevin Bongers
 [core]
-	editor = vim
-	autocrlf = input
+    editor = vim
+    autocrlf = input
     eol = native
 [alias]
-	s = status -sb
-	fa = fetch --all
-	po = pull origin
-	pom = pull origin master
-	plog=log --color --date=short --graph --pretty=format:\"%h %Cgreen%an%Creset %cd%Cblue%d %Cred%s\"
+    s = status -sb
+    fa = fetch --all
+    po = pull origin
+    pom = pull origin master
+    rom = rebase origin/master
+    plog=log --color --date=short --graph --pretty=format:\"%h %Cgreen%an%Creset %cd%Cblue%d %Cred%s\"
 [gitreview]
-	username = Kevin
+    username = Kevin
 [include]
     path = ~/.gitconfig_local
