@@ -16,12 +16,7 @@ import XMonad.Layout.LayoutModifier
 
 myManageHook :: Query (Endo WindowSet)
 myManageHook = composeAll
-    [ className =? "Terminator"    --> doShift "2"
-    , className =? "Google-chrome" --> doShift "1"
-    , className =? "Sublime Text"  --> doShift "3"
-    , className =? "Thunar"        --> doShift "4"
-    , className =? "Thunderbird"   --> doShift "4"
-    , className =? "Hotot"         --> doShift "4"
+    [ className =? "Terminator"    --> doShift "1"
     , className =? "Screenkey"     --> doIgnore
     , className =? "Xfce4-notifyd" --> doIgnore
     ]
@@ -38,7 +33,7 @@ xfceLayout = xfceConfig
              { modMask = mod4Mask
              , workspaces = map show ([1..9] :: [Int])
              , manageHook = myManageHook <+> manageHook xfceConfig
-             , borderWidth        = 4
+             , borderWidth        = 2
              , terminal           = "terminator"
              , normalBorderColor  = "#000000"
              , focusFollowsMouse  = False
