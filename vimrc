@@ -82,7 +82,7 @@ filetype plugin indent on    " required
 " Try loading the color scheme
 silent! color harlequin
 
-let NERDTreeIgnore=['\.py[co]$', '\~$']
+let NERDTreeIgnore=['\.py[co]$', '\~$', '__pycache__']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_use_caching = 0
