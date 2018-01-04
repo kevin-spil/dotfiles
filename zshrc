@@ -65,6 +65,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 export EDITOR='vim'
+export REQUESTS_CA_BUNDLE='/etc/ssl/certs/ca-bundle.trust.crt'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
